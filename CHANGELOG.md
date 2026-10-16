@@ -2,6 +2,8 @@
 
 ## 0.46.1 - Unreleased
 
+- Gmail: chunk `batch modify` requests at 1,000 message IDs and report partial progress if a later batch fails. (#1209, #1199) — thanks @i098.
+
 ## 0.46.0 - 2026-10-20
 
 **Highlights:** Safely re-encrypt auth stores, route Google API calls through credential-free relays, and compose richer Gmail forwards, with Go security fixes.
